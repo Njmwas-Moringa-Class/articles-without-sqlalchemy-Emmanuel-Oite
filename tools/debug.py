@@ -1,5 +1,8 @@
 import sys
-sys.path.append('/home/speedy/Development/Phase3/articles-without-sqlalchemy-Emmanuel-Oite')
+import ipdb
+
+sys.path.append('/Users/SpeedySponge/Desktop/Moringa/Phase3/articles-without-sqlalchemy-Emmanuel-Oite')
+
 
 from lib.Author import Author
 from lib.Magazine import Magazine
@@ -39,3 +42,4 @@ print("Magazine article titles for 'Science Weekly':", magazine1.article_titles(
 print("\nContributing authors for 'Science Weekly':")
 for author in magazine1.contributing_authors():
     print(f"- {author.get_name()}")
+ipdb.set_trace()
